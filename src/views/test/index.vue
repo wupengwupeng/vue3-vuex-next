@@ -2,6 +2,7 @@
   <div>
     sdfasdf{{ store.state.test.name }} {{ store.state.test.sex }}
     {{ store.state.test.age }}
+    <div class="bg-slate-500">asdfsdf</div>
   </div>
 </template>
 

@@ -1,3 +1,5 @@
 <template>
-  <div>导航条</div>
+  <div>
+    <el-button>点击我</el-button>
+  </div>
 </template>
