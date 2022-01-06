@@ -30,12 +30,12 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   .header {
-    height: 30px;
+    height: 60px;
     width: 100%;
     display: flex;
     // justify-content: center;
-    align-items: center;
-    background: rgb(114, 108, 108);
+    // align-items: center;
+    // background: rgb(114, 108, 108);
   }
   .main {
     flex: 1;
