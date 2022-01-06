@@ -6,8 +6,6 @@ import ElementPlus from 'element-plus'
 
 import '@/style/index.scss'
 
-
-
 import router from '@/router/index'
 
 

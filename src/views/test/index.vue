@@ -3,6 +3,7 @@
     sdfasdf{{ store.state.test.name }} {{ store.state.test.sex }}
     {{ store.state.test.age }}
     <div class="bg-slate-500">asdfsdf</div>
+    <el-button type="primary">惦记我</el-button>
   </div>
 </template>
 

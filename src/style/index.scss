@@ -1,4 +1,23 @@
 
-:root {
-  --el-color-primary: rgb(98, 0, 255);
+$--color-primary: #1890ff;
+$--color-success: #13ce66;
+$--color-warning: #ffba00;
+$--color-danger: #ff4949;
+$--color-info: #5d5d5d;
+$--button-font-weight: 400;
+$--color-text-regular: #1f2d3d;
+$--border-color-light: #dfe4ed;
+$--border-color-lighter: #e6ebf5;
+$--table-border: 1px solid#dfe6ec;
+@mixin color_primary($color) {
+  --el-color-primary: $color;
+  [data-theme = "color;"] & {
+    --el-color-primary: $--color-danger
+  }
 }
+
+:root {
+  --el-color-primary: var($--color-primary);
+}
+
+
