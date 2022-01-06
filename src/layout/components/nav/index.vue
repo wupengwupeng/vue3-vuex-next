@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-button @click="handlerClickTest">点击我</el-button>
+    <el-button type="primary" @click="handlerClickTest">点击我</el-button>
   </div>
 </template>
 

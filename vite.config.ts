@@ -8,5 +8,12 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src')
     }
-  }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "./src/style/element/index.scss" as *;`,
+      },
+    },
+  },
 })

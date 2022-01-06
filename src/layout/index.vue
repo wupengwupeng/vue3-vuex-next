@@ -35,7 +35,7 @@ export default defineComponent({
     display: flex;
     // justify-content: center;
     align-items: center;
-    background: red;
+    background: rgb(114, 108, 108);
   }
   .main {
     flex: 1;

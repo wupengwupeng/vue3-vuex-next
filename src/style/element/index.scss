@@ -1,0 +1,60 @@
+$--colors: (
+  "primary": (
+    "base": green,
+  ),
+  "success": (
+    "base": #21ba45,
+  ),
+  "warning": (
+    "base": #f2711c,
+  ),
+  "danger": (
+    "base": #db2828,
+  ),
+  "error": (
+    "base": #db2828,
+  ),
+  "info": (
+    "base": #42b8dd,
+  ),
+);
+
+// Override Element UI variables
+$--color-primary: #1890ff;
+$--color-success: #13ce66;
+$--color-warning: #ffba00;
+$--color-danger: #ff4949;
+$--color-info: #5d5d5d;
+$--button-font-weight: 400;
+$--color-text-regular: #1f2d3d;
+$--border-color-light: #dfe4ed;
+$--border-color-lighter: #e6ebf5;
+$--table-border: 1px solid#dfe6ec;
+
+// You should use them in scss, because we calculate it by sass.
+// comment next lines to use default color
+// @forward "element-plus/theme-chalk/src/common/var.scss" with
+//   (
+//     // do not use same name, it will override.
+//     $colors: $--colors,
+//     $button-padding-horizontal: ("default": 50px)
+//   );
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@import "element-plus/theme-chalk/src/index.scss";
+
+// if you want to import all
+// @use "element-plus/theme-chalk/src/index.scss" as *;
+
+// You can comment it to hide debug info.
+// @debug $--colors;
+
+
+
+:export {
+  theme: $--color-primary;
+}
