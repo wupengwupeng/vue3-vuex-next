@@ -44,7 +44,6 @@ export default defineComponent({
         router.push("/test");
       },
       handlerChangeColor() {
-        console.log(color1.value);
         document.documentElement.style.setProperty(
           "--el-color-primary",
           color1.value

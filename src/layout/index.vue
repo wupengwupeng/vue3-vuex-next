@@ -33,12 +33,10 @@ export default defineComponent({
     height: 60px;
     width: 100%;
     display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // background: rgb(114, 108, 108);
   }
   .main {
     flex: 1;
+    overflow-y: auto;
   }
 }
 </style>
