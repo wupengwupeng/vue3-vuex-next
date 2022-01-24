@@ -1,5 +1,5 @@
 <template>
-  <div class="contenter">
+  <div class="contenter h-screen w-screen">
     <div class="header">
       <NavBar />
     </div>
@@ -23,8 +23,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .contenter {
-  width: 100%;
-  height: 100vh;
   padding: 0;
   margin: 0;
   display: flex;

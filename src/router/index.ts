@@ -16,6 +16,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/app',
         name: 'app',
         component: () => import("@/views/app/index.vue")
+      },
+      {
+        path: '/litterComponents',
+        name: 'litterComponents',
+        component: () => import("@/views/littleCompoents/index.vue")
       }
     ]
   }

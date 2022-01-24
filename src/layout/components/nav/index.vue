@@ -1,14 +1,16 @@
 <template>
-  <div class="w-full flex items-center relative">
+  <div class="w-full bg-gray-300 flex items-center relative">
     <!-- <el-button type="primary" >点击我</el-button> -->
     <el-menu :default-active="activeIndex" mode="horizontal">
       <el-menu-item index="1" @click="handlerClickApp"
         >Processing Center</el-menu-item
       >
       <el-sub-menu index="2">
-        <template #title>Workspace</template>
-        <el-menu-item index="2-1">item one</el-menu-item>
-        <el-menu-item index="2-2">item two</el-menu-item>
+        <template #title>components</template>
+        <el-menu-item index="2-1" @click="handlerClickComponent(0)"
+          >小组件集合</el-menu-item
+        >
+        <el-menu-item index="2-2">啊手动阀</el-menu-item>
         <el-menu-item index="2-3">item three</el-menu-item>
         <el-sub-menu index="2-4">
           <template #title>item four</template>
@@ -20,7 +22,7 @@
       <el-menu-item index="3" @click="handlerClickTest">Info</el-menu-item>
       <el-menu-item index="4">Orders</el-menu-item>
     </el-menu>
-    <div class="flex w-200 absolute right-0">
+    <div class="flex w-200 absolute top-0 right-0" v-show="false">
       <span>With default value</span>
       <el-color-picker v-model="color1" @change="handlerChangeColor" />
     </div>
@@ -42,6 +44,13 @@ export default defineComponent({
       },
       handlerClickApp() {
         router.push("/test");
+      },
+      handlerClickComponent(num: number) {
+        switch (num) {
+          case 0:
+            router.push("/litterComponents");
+            break;
+        }
       },
       handlerChangeColor() {
         document.documentElement.style.setProperty(

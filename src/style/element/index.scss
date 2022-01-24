@@ -39,13 +39,13 @@ $--table-border: 1px solid#dfe6ec;
 //     $colors: $--colors,
 //     $button-padding-horizontal: ("default": 50px)
 //   );
-// @import 'tailwindcss/base';
 
-// @import 'tailwindcss/components';
-// @import 'tailwindcss/utilities';
-
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @import "element-plus/theme-chalk/src/index.scss";
+
 
 // if you want to import all
 // @use "element-plus/theme-chalk/src/index.scss" as *;
